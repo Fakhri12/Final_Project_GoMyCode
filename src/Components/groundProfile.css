@@ -1,9 +1,60 @@
 .content-ground {
     display: flex;
 }
-.presentation-ground div div {
-    display: flex;
-}
 .presentation-place-ground {
     display: flex;
+}
+.presentation-email-ground {
+    display: flex;
+}
+.presentation-telephone-ground {
+    display: flex;
+}
+.presentation-ground div div i {
+    font-size: 29px;
+    color: #687074;
+    margin-right: 20px;
+}
+.coordinated {
+    margin-bottom: 30px;
+}
+.coordinated div h3 {
+    font-size: 20px;
+    height: 30px;;
+}
+.name-ground {
+    margin-bottom: 60px;
+}
+.price-ground {
+    text-align: right;
+    margin-bottom: 60px;
+}
+.number-ground {
+    margin-bottom: 30px;
+}
+.apropos {
+    margin-bottom: 30px;
+}
+.apropos h1 {
+    margin-bottom: 20px;
+}
+.apropos p {
+    padding: 0 225px 0 0;
+    margin-bottom: 30px;
+}
+.parking {
+    display: flex;
+}
+.parking i {
+    font-size: 40px;
+    color: #687074;
+    margin-right: 20px;
+}
+.booking {
+    text-align: right;
+}
+.booking input {
+    background-color: #687074;
+    color: white;
+    padding: 10px 35px;
 }

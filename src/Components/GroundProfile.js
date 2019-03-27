@@ -1,6 +1,5 @@
 import React from 'react'
 import Sliderpictures from './SliderPictures';
-import StarsView from './StarsView/StarsView';
 import './groundProfile.css';
 
 const GroundProfile = props => {
@@ -13,19 +12,19 @@ const GroundProfile = props => {
                         <div className="row">
                             <div className="col-6">
                                 <div className="presentation-ground">
-                                    <div>
+                                    <div className="coordinated">
                                         <h1 className="name-ground">Classico-Club</h1>
                                         <div className="presentation-place-ground">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <h3 className="place-ground">hhhhhhhhhhhhh</h3>
+                                            <i class="fas fa-map-marker-alt"></i> 
+                                            <h3 className="place-ground"> 33 Rue liberté tunis,tunisie</h3>
                                         </div>
                                         <div className="presentation-email-ground">
-                                            <i class="fas fa-at"></i>
-                                            <h3 className="email-ground">hhhhhhhhhhhhh</h3>
+                                            <i class="fas fa-at"></i> 
+                                            <h3 className="email-ground"> Classico-club@gmail.com</h3>
                                         </div>
                                         <div className="presentation-telephone-ground">
-                                            <i class="fas fa-mobile-alt"></i>
-                                            <h3 className="telephone-ground">hhhhhhhhhhhh</h3>
+                                            <i class="fas fa-mobile-alt"></i> 
+                                            <h3 className="telephone-ground"> 00216 28 987 654</h3>
                                         </div>
                                     </div>
                                     <div>
@@ -41,8 +40,7 @@ const GroundProfile = props => {
                                     <div className="number-ground">
                                         <h1><span>2</span> Terrains</h1>
                                     </div>
-                                    <StarsView/>
-                                    <div>
+                                    <div className="apropos">
                                         <h1>A propos Local</h1>
                                         <p className="apropos-ground">Classico-Club est un complexe sportif offrant 2 terrains de Football couverts en gazon synthétique. Les parties de Football se jouent à 6 contre 6 ( 5 joueurs 1 gardien de but ).</p>
                                         <h1>Équipements</h1>
@@ -50,6 +48,9 @@ const GroundProfile = props => {
                                             <i class="fas fa-parking"></i>
                                             <h2>Parking</h2>
                                         </div>
+                                    </div>
+                                    <div className="booking">
+                                    <input type="button" name="" value="booking" />
                                     </div>
                                 </div>
                             </div>
