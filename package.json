@@ -20,7 +20,8 @@
     "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.5",
     "react-vio-form": "^1.2.0",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "yarn": "^1.15.2"
   },
   "scripts": {
     "start": "react-scripts start",
