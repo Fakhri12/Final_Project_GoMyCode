@@ -1,0 +1,72 @@
+.aa-header {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  height: 93px;
+}
+.header-right-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-list .username-input , .password-input {
+  width: 110px;
+  height: 30px;
+  border-width: 2px;
+  padding: 6px 12px;
+  margin-right: 9px;
+}
+
+.img-facebook {
+  width: 20px;
+}
+.img-twitter {
+  width: 20px;
+}
+.list-facebook a {
+  padding-right: 0;
+}
+.list-twitter a {
+  padding-left: 0;
+}
+.header-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+}
+.header-list i{
+  font-size: 13px;
+}
+
+.header-list a {
+  display: block;
+  color: #687074;
+  font-size: 17px;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+}
+.header-lists .header-list a .img-facebook{
+  padding-right: 4px !important;
+}
+.header-list {
+  display: flex;
+}
+.header-list a:hover {
+  border-bottom: solid 1px #72c02c;
+  color : #72c02c;
+}
+.header-left{
+    width: 160px;
+    padding-left: 20px;
+}
+.login {
+  padding-right: 5px;
+}
+.login > a:hover {
+  text-decoration: none !important ;
+
+}
