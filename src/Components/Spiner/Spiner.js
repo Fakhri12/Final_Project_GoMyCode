@@ -1,5 +1,5 @@
 import React from 'react';
-import './Spiner.css'
+import './spiner.css'
 
 const Spiner = (WrappedComponent)=> class  extends React.Component {
     constructor(props){
@@ -20,7 +20,7 @@ const Spiner = (WrappedComponent)=> class  extends React.Component {
     }
     render(){
         return (
-            this.state.loading ? <div className="parent"> <div class="lds-facebook"><div></div><div></div><div></div></div></div> : <WrappedComponent {...this.props}/>
+            this.state.loading ? <div className="parent"> <div className="lds-facebook"><div></div><div></div><div></div></div></div> : <WrappedComponent {...this.props}/>
             )
     }
     }

@@ -1,0 +1,17 @@
+.myphoto img {
+    border-radius: 150px;
+    height: 240px;
+}
+.myphoto {
+    margin-bottom: 30px;
+}
+.myname {
+    margin-bottom: 30px;
+}
+.copyright {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.about-row {
+    margin-top: 30px;
+}

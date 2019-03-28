@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import client from '../client';
-import './SignUpForm.css'
+import client from '../../client';
+import './signUpForm.css'
 
 const upperCaseLetters = /[A-Z]/g;
 const numbers = /[0-9]/g
@@ -62,9 +62,9 @@ class Form extends Component {
                     </div>
                     <hr/>
                     <div className="myfacebook">
-                        <a href="#"><img src="https://www.openplay.co.uk/assets/images/facebook-login.png" className="logo-facebook"/></a>
+                        <a href="www.aaa.com"><img src="https://www.openplay.co.uk/assets/images/facebook-login.png" alt="" className="logo-facebook"/></a>
                         <div className="look">
-                            <i className="fas fa-lock"></i> This will not allow us to post to Facebook, but you will be signed up for marketing communications -<a href="#">see details</a>
+                            <i className="fas fa-lock"></i> This will not allow us to post to Facebook, but you will be signed up for marketing communications -<a href="www.bbb.com">see details</a>
                         </div>
                     </div>
                 </form>

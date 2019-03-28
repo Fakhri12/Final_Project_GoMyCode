@@ -1,5 +1,5 @@
 import React from 'react'
-import Sliderpictures from './SliderPictures';
+import Sliderpictures from '../SliderPictures';
 import './groundProfile.css';
 
 const GroundProfile = props => {

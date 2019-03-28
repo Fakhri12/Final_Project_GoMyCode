@@ -7,19 +7,19 @@ class SliderPictures extends Component {
     return (
       <Carousel autoPlay >
         <div>
-          <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="" />
           <p className="legend">Extérieure de Terrain</p>
         </div>
         <div>
-          <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" alt=""/>
           <p className="legend">Terrain</p>
         </div>
         <div>
-          <img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" alt=""/>
           <p className="legend">Gazon</p>
         </div>
         <div>
-          <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" alt=""/>
           <p className="legend">Parking</p>
         </div>
       </Carousel>

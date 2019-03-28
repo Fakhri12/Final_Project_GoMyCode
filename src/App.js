@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-//import Head from './Components/Head';
 
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+import Header from "../src/Components/Header/Header";
+import Footer from "../src/Components/Footer/Footer"
 import GroundContainer from "./Components/GroundContainer/GroundContainer";
-//import LocationSearchInput from './Components/Search';
-//import MyApp from './Components/Calendar';
-import Form from "./Components/SignUpForm";
+import SignUpForm from "../src/Components/SignUpForm/SignUpForm";
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import GroundProfile from "./Components/GroundProfile";
+import GroundProfile from "../src/Components/GroundProfile/GroundProfile";
+import Spiner from '../src/Components/Spiner/Spiner'
+import About from "./Components/About/About";
 //import MyClients from './Components/MyClients';
 
 class App extends Component {
@@ -18,16 +17,16 @@ class App extends Component {
       <div className="App">
         <Router>
           <Header />
-          {/* <GroundContainer/> */}
           <Route exact path="/" component={GroundContainer} />
           <Route path="/home"component={GroundContainer}/>
-          <Route path="/sign-up" component={Form} />
+          <Route path="/sign-up" component={SignUpForm} />
           <Route exact path="/GroundProfile" component={GroundProfile} />
-          <Footer />
+          <Route exact path="/about" component={About} />
+          <Footer/>
         </Router>
       </div>
     );
   }
 }
 
-export default App;
+export default Spiner (App);

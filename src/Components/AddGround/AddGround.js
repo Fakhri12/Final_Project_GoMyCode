@@ -42,7 +42,11 @@ class AddGround extends React.Component {
             </Form>
         </ModalBody>
         <ModalFooter>
-            <Button color="primary" onClick={() => this.props.addMovie(this.state)}>Add</Button>
+            <Button color="primary" onClick={() => {this.props.addMovie(this.state)
+            this.setState({
+              modal : ! this.state.modal
+            })
+            }}>Add</Button>
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
         </ModalFooter>
     </Modal>

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 
 
 
 const Footer = () => {
     return (
         <div>
-                <footer className="footer">
+            <footer className="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-lg-4">
@@ -23,22 +23,22 @@ const Footer = () => {
                             <div className="socialLinks">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <i className="fab fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <i className="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <i className="fab fa-google-plus-g"></i>
                                         </a>
                                     </li>
@@ -55,7 +55,7 @@ const Footer = () => {
                                 <img className="img-fluid" src="https://www.vdl.lu/sites/default/files/styles/max_width_1400/public/media/image/2017-07/SPO_foot_stade_camille_polfer.JPG?itok=qA6F0cQ7" alt=""/>
                                 <div className="media-body d-flex align-self-center">
                                     <div className="content">
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <p>
                                                     Did son unreserved themselves indulgence its
                                             </p>
@@ -70,7 +70,7 @@ const Footer = () => {
                                 <img className="img-fluid" src="https://newstourisme.com/wp-content/uploads/2018/02/28364607-D6AA-425B-8EC3-597DA3B351D8-21744-00000B23120CBB27.jpeg" alt=""/>
                                 <div className="media-body d-flex align-self-center">
                                     <div className="content">
-                                        <a href="#">
+                                        <a href="www.aaa.com">
                                             <p>
                                                     Rapturous am eagerness it as resolving household
                                             </p>
@@ -90,32 +90,32 @@ const Footer = () => {
                             </h5>
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         about
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         contact
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         privecy
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         skills
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         career
                                     </a>
                                 </li>
@@ -129,32 +129,32 @@ const Footer = () => {
                             </h5>
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         themeforest
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         graphicriver
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         carrier
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         videolives
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         videos
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="www.aaa.com">
                                         photos
                                     </a>
                                 </li>

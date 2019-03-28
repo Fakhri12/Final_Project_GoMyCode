@@ -1,5 +1,5 @@
 import React from 'react';
-import './GroundContainer.css'
+import './GroundContainer.css';
 import GroundView from '../GroundView/GroundView';
 import StarsView from '../StarsView/StarsView';
 import GroundSearch from '../GroundSearch/GroundSearch';
@@ -9,8 +9,8 @@ import Manouba from '../../images/terrain-2.jpg';
 import Bardo from '../../images/terrain-3.jpg';
 import Sanheja from '../../images/terrain-4.jpg';
 import Tunis from '../../images/terrain-5.jpg';
-import Bjewa from '../../images/terrain-6.jpg'
-import Cards from '../Cards';
+import Bjewa from '../../images/terrain-6.jpg';
+import Cards from '../Cards/Cards'
 
 
 

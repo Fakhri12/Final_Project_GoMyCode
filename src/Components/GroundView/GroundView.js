@@ -8,7 +8,7 @@ const GroundView=(props)=> {
     return (
         <div className="mymovies">
             {props.listMovie.map((movie) =>
-            <Link to="/GroundProfile">    <div className="movie-card" data-aos="flip-left">
+            <Link to="/GroundProfile"><div className="movie-card" data-aos="flip-left">
                 <div className="title">
                     <span>{movie.title}</span>
                     <span>{movie.date}</span>
