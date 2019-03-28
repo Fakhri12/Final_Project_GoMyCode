@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import client from '../../client';
 import './signUpForm.css'
+import axios from 'axios'
 
 const upperCaseLetters = /[A-Z]/g;
 const numbers = /[0-9]/g
@@ -34,9 +35,9 @@ class Form extends Component {
         }
 
     saveUser = data => {
-        client.post('/addUser', data)
-          .then(function (response) {
-            console.log(response);
+        axios.post('/addUser', data)
+          .then(function (user) {
+            console.log(user);
           })
           .catch(function (error) {
             console.log(error);

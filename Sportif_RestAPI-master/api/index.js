@@ -1,10 +1,14 @@
 import bodyParser from 'body-parser'; //import le module body-parser
 import express from 'express'; //import express
-
+import cors from 'cors'
 import root from './rootes'
+
+
+
 
 export default async (port) => {
   const app = express();
+  app.use(cors());
   app.use(bodyParser.json()); //configurer body parser comme middlware
   app.use('/', root); 
   app.listen(port , (err) =>{
