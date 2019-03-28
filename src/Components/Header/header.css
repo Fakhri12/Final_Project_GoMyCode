@@ -9,11 +9,14 @@
   justify-content: flex-end;
 }
 
-.header-list .username-input , .password-input {
-  width: 110px;
+.header-list .username-input, .password-input {
+  width: 161px;
   height: 30px;
+  font-size: 12px;
+  border-radius: 5px;
   border-width: 2px;
-  padding: 6px 12px;
+  padding: 4px 5px;
+  background-color: white;
   margin-right: 9px;
 }
 

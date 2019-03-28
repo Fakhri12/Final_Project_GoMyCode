@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import client from '../../client';
 import './signUpForm.css'
 import axios from 'axios'
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 const upperCaseLetters = /[A-Z]/g;
 const numbers = /[0-9]/g
 
-class Form extends Component {
+class SignUpForm extends Component {
     state = {};
     
     handleInputChange = (event) => {
@@ -47,32 +48,46 @@ class Form extends Component {
 
     render() {
         return (
-            <div className="myform">
-                <div className="header-form"></div>
-                <form className="myform-content">
-                    <h1>Sign up to your account</h1>
-                    <hr/>
-                    <div className="myinputs">
-                        <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} className="input-name" placeholder="First name"/>
-                        <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleInputChange} className="input-lastName" placeholder="Last name"/>
-                        <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} className="email" placeholder="Email address"/>
-                        <input type="text" name="userName" value={this.state.userName} onChange={this.handleInputChange} className="userName" placeholder="Username"/>
-                        <input type="password" name="password" value={this.state.password} onChange={this.handleInputChange} className="password" placeholder="Password, min 8 characters long"/>
-                        <input type="password" name="passwordVerification" value={this.state.passwordVerification} onChange={this.handleInputChange} className="password" placeholder="retape your password"/>
-                        <input type="button" name="" value="Register" onClick={this.myFunction} />
-                    </div>
-                    <hr/>
-                    <div className="myfacebook">
-                        <a href="www.aaa.com"><img src="https://www.openplay.co.uk/assets/images/facebook-login.png" alt="" className="logo-facebook"/></a>
-                        <div className="look">
-                            <i className="fas fa-lock"></i> This will not allow us to post to Facebook, but you will be signed up for marketing communications -<a href="www.bbb.com">see details</a>
-                        </div>
-                    </div>
-                </form>
+            <div className="form-container">
+                <div className="form">
+                <Form>
+                    
+                    <FormGroup>
+                    <Label for="exampleEmail">Name</Label>
+                    <Input type="text" name="name" id="name" placeholder="name..."  value={this.state.name} onChange={this.handleInputChange}/>
+                    </FormGroup>
+                    <FormGroup>
+                    <Label for="exampleEmail">SurName</Label>
+                    <Input type="text" name="surname" id="surname" placeholder="surname..."  value={this.state.surname} onChange={this.handleInputChange}/>
+                    </FormGroup>
+                    <FormGroup>
+                    <Label for="exampleEmail">Email</Label>
+                    <Input type="email" name="email" id="exampleEmail" placeholder="adresse mail"  value={this.state.email} onChange={this.handleInputChange}/>
+                    </FormGroup>
+                    <FormGroup>
+                    <Label for="examplePassword">Password</Label>
+                    <Input type="password" name="password" id="examplePassword" placeholder="password" value={this.state.password} onChange={this.handleInputChange}/>
+                    </FormGroup>
+                    <FormGroup>
+                    <Label for="examplePassword">Password Verification</Label>
+                    <Input type="password" name="password" id="examplePassword" placeholder="password verification" value={this.state.passwordVerification} onChange={this.handleInputChange}/>
+                    </FormGroup>
+                    <FormGroup>
+                    <Label for="exampleSelect">Sexe</Label>
+                    <Input type="select" name="select" id="exampleSelect" value={this.state.sexe} onChange={this.handleInputChange}>
+                        <option>Homme</option>
+                        <option>Femme</option>   
+                    </Input>
+                    </FormGroup>
+                    
+                    <Button  onClick={this.myFunction} >Submit</Button>
+                </Form>
+                </div>
             </div>
+    
         )
     }
 }
 
 
-export default Form
+export default SignUpForm;

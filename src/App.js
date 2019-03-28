@@ -21,11 +21,13 @@ class App extends Component {
           <Route exact path="/" component={GroundContainer} />
           <Route path="/home"component={GroundContainer}/>
           <Route path="/sign-up" component={SignUpForm} />
+          <Route path="/contact" component={ListUsers} />
+
           <Route exact path="/GroundProfile" component={GroundProfile} />
           <Route exact path="/about" component={About} />
           <Footer/>
         </Router>
-        <ListUsers/>
+   
       </div>
     );
   }

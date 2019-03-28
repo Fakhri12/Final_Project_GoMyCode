@@ -90,7 +90,7 @@ const movieFilter = (movie, title,rate) =>{
         }
         
   
-        handelSearsh=(title)=>{
+        handelSearch=(title)=>{
             this.setState({
                 searchInput:title
              })
@@ -115,7 +115,7 @@ const movieFilter = (movie, title,rate) =>{
                     <div className="ground-body">
                     <div className="myGround">
                         <div className="header">
-                            <GroundSearch searsh={value=>this.handelSearsh(value)}/>
+                            <GroundSearch search={value=>this.handelSearch(value)}/>
                             <div className="stars" data-aos="fade-left">
                                 <StarsView rating={this.state.searchStar} searchRating={this.handleRating}/>
                             </div>

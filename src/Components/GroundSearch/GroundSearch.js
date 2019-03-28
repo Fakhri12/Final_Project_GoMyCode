@@ -2,13 +2,13 @@ import React from 'react';
 
 
 
-const GroundSearsh=(props)=> {
+const GroundSearch=(props)=> {
 
     return (
         <div className="myinput" data-aos="fade-right">
-            <input type="input" onChange={(e)=>props.searsh(e.target.value)}/>
-            <input type="button" value="Searsh"/>
+            <input type="input" onChange={(e)=>props.search(e.target.value)}/>
+            <input type="button" value="Search"/>
         </div>
         )
     }
-export default GroundSearsh;
+export default GroundSearch;

@@ -15,8 +15,10 @@ const Header = () =>{
                         <li className="username"><input  type="text" name="email" className="username-input" placeholder="User Name"/></li>
                         <li className="username"><input  type="password" name="password" className="password-input" placeholder="Password"/></li>
                         <li className="connect"><button type="button">connect</button> </li>
-                        <li className="login"><Link to="/sign-up">Sign-Up</Link></li>
+                        <li className="login"></li>
                     </ul>
+                    
+                    <Link to="/sign-up">Sign-Up</Link>
                 </div>
                 <div className="header-left-buttom">
                     <ul className="header-lists">
