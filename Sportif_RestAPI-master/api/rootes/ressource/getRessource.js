@@ -5,10 +5,19 @@ const router = Router();
 
 router.get('/getRessource', function(req,res) {
   // res.send("hello")
-  ressourceModel.find(req.body).then(function(ressource){
+  ressourceModel.find(req.body).then(function(ressources){
+    res.send(ressources);
+}).catch((err) => {
+  res.send('error')
+});
+});
+
+router.get('/getRessource/:id', function(req,res) {
+  ressourceModel.findOne(req.body.id).then(function(ressource){
     res.send(ressource);
 }).catch((err) => {
   res.send('error')
 });
 });
+
 export default router;
