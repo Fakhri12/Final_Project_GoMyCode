@@ -7,6 +7,7 @@ import getUser from './user/getUser'
 import addRessource from './ressource/addRessource'
 import updateRessource from './ressource/updateRessource'
 import deleteRessource from './ressource/deleteRessource'
+import getRessource from './ressource/getRessource'
 
 
 
@@ -18,6 +19,8 @@ router.use(addUser);
 router.use(deleteUser);
 router.use(updateUser);
 router.use(addRessource);
+router.use(getRessource);
+
 router.use(deleteRessource);
 router.use(updateRessource);
 
