@@ -11,6 +11,7 @@ import Sanheja from '../../images/terrain-4.jpg';
 import Tunis from '../../images/terrain-5.jpg';
 import Bjewa from '../../images/terrain-6.jpg';
 import Cards from '../Cards/Cards'
+import axios from 'axios'
 
 
 
@@ -54,17 +55,38 @@ const listGrounds =[
      },
 ]
 const movieFilter = (movie, title,rate) =>{
-    return movie.title.toUpperCase().includes(title.toUpperCase()) && (movie.rate>=rate)
+    return movie.name.toUpperCase().includes(title.toUpperCase()) && (movie.rating>=rate)
 }
     
     class GroundContainer extends React.Component {
         constructor() {
           super();
           this.state = {
-              moviesList:listGrounds,
+             groundLists:[],
               searchStar: 1,
               searchInput:""
           }
+       
+
+        }
+     
+
+
+        componentDidMount () {
+            axios.get("/getRessource")
+            .then( res => 
+                this.setState ({
+                    groundLists : res.data
+                }, () => {
+                    console.log(this.state.groundLists , "jhhhhhhhhh")
+
+            })
+            )
+            // axios.get("/getRessource")
+            // .then( res => console.log(res.data))
+            // this.setState ({
+            //     groundLists : ["aa" ," nnn" ," nnnn"]
+            // })
         }
         
   
@@ -78,10 +100,12 @@ const movieFilter = (movie, title,rate) =>{
               searchStar: rating
             });
           };
-          addMovie = movie => {
+          addMovie = ground => {
+            
             this.setState({
-                moviesList: this.state.moviesList.concat(movie)
+                groundLists : this.state.groundLists.concat(ground)
             });
+            axios.post('/addRessource',ground)
           };
      
          
@@ -96,7 +120,9 @@ const movieFilter = (movie, title,rate) =>{
                                 <StarsView rating={this.state.searchStar} searchRating={this.handleRating}/>
                             </div>
                         </div>
-                        <GroundView listMovie={this.state.moviesList.filter(movie => movieFilter(movie,this.state.searchInput, this.state.searchStar))}/>
+                        <GroundView listMovie={ listGrounds}/>
+                        <GroundView listMovie={this.state.groundLists}/>
+                        {/* <GroundView listMovie={this.state.groundLists.filter(movie => movieFilter(movie,this.state.searchInput, this.state.searchStar))}/> */}
                         <AddGround addMovie={this.addMovie}/> 
                     </div>
                 </div>
