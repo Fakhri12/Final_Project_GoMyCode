@@ -14,8 +14,10 @@ body{
   flex-wrap: wrap;
 }
 .store-title {
+  padding: 5px;
   font-size: 30px;
   text-align: center;
+  background-color: azure;
 }
 
 .card__container{

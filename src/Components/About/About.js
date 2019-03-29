@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
 import fakhreddine from '../../images/fakhreddine.jpg'
+import ramy from '../../images/ramy.jpg'
 
 const Apropos = () => {
     return (
@@ -19,7 +20,7 @@ const Apropos = () => {
                 </div>
                 <div className="col-6 text-center">
                     <div className="myphoto">
-                        <img src={fakhreddine} className="img-fluid" alt=""/>
+                        <img src={ramy} className="img-fluid" alt=""/>
                     </div>
                     <div className="myname">
                         <h1>Rami Znaki</h1>
